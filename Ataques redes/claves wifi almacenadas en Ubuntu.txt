@@ -1,0 +1,9 @@
+claves wifi almacenadas en Ubuntu
+Requisitos de finalización
+Se guardan en la carpeta
+
+(httpsubunlog.comredes-wifi-obten-las-contrasenas-redes-guardadas)
+
+etcNetworkManagersystem-connections
+
+¿Dónde se guarda en Windows

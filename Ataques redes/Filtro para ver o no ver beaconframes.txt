@@ -1,0 +1,17 @@
+Filtro para ver o no ver beaconframes
+Requisitos de finalización
+Tipos de paquetes WLAN, que se clasifican en 3 categorías principales que son
+
+Management
+
+Control
+
+Data
+
+httpsen.wikipedia.orgwiki802.11_Frame_Types(https://en.wikipedia.org/wiki/802.11_Frame_Types)
+
+Necesitamos ver los beacon frames o no verlos, según el proceso que vamos a estudiar
+
+(wlan.addr == 123456789abc) && !(wlan.fc.type_subtype == 0x08)
+
+También se usa (wlan.fc.type_subtype == 0x05)

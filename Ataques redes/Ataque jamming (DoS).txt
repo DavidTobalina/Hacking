@@ -1,0 +1,31 @@
+Ataque jamming (DoS)
+Requisitos de finalización
+Ataque de Jamming
+
+Este ataque genera una denegación de Servicio en una determinada red wifi, se puede ejecutar de dos formas
+
+aireplay-ng
+En este caso ejecutamos el comando de la siguiente forma
+
+# aireplay-ng -0 0 -a MAC DE PUNTO DE ACCESO iNTERFAZ WIFI
+
+En el airodump-ng de la red veremos bajar el PWR (power) a 0
+
+websploit
+Este framework hay que instalarlo con apt install websploit
+
+Lo ejecutamos y vemos lo que nos ofrece con show modules
+
+El módulo wifiwifi_jammer incluye este ataque, dentro del framework pondremos
+
+use wifiwifi_jammer
+
+show options
+
+set bssid mac del punto de acceso
+
+set essid identificador del punto de acceso
+
+run
+
+Veremos que lanza varios terminales con ataques airplay-ng, el resultado es el mismo.

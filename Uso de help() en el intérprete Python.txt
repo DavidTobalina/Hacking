@@ -1,0 +1,17 @@
+Si lanzamos un intérprete python en la terminal
+
+#python3
+
+podemos acceder a la ayuda tecleanto:
+
+>>>help()
+
+Entramos dentro del intérprete help donde podemos ver los módulos disponibles y ayuda sobre los mismos.
+
+help>modules
+
+Poniendo el nombre del módulo se ve la ayuda sobre el mismo.
+
+Para salir q y para salir de help
+
+help>quit

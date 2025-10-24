@@ -1,0 +1,17 @@
+Realiza un programa en python que reciba parámetros que detecte máquinas encendidas y puertos abiertos, por ejemplo el 80, 21,22; empleando los módulos para hacer ping y socket. Ejemplos de parámetros pueden ser:
+
+-h ofrece ayuda y es opcional
+
+-t espera una dirección ip del target y es obligatoria
+
+- parámetro posicional con la ip o dirección de red
+
+-p puerto a testear, por defecto el 80
+
+-v n nivel de verbosidad
+
+--open muestre sólo los puertos abiertos
+
+o cualquiera que se te ocurra, pero el help debe dejar claro cómo usar el script
+
+El programa mostrará los argumentos pasados y controlará los errores si no se pasan argumentos o se pasan de forma incorrecta.

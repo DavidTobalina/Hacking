@@ -1,0 +1,11 @@
+Código ejemplo:
+
+import socket
+for port in range(80,90):
+s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+result=s.connect_ex(("www.jesusninoc.com",port))
+if result == 0:
+print("Puerto abierto")
+else:
+print("Puerto no abierto")
+s.close()

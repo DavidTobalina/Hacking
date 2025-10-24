@@ -1,0 +1,5 @@
+Python 2.7: python -m SimpleHTTPServer [puerto]
+
+Python 3: python -m http.server [puerto]
+
+Con este comando podemos compartir el contenido de una carpeta en modo lectura con los miembros de nuestra red.

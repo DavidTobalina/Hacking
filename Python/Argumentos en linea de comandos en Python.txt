@@ -1,0 +1,3 @@
+Cómo recibir argumentos en línea de comandos en Python.
+
+Haga clic en el enlace https://geekflare.com/es/parse-command-line-arguments-python/ para abrir el recurso.

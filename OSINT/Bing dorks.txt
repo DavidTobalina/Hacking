@@ -1,0 +1,13 @@
+Ejemplos de operadores lógicos en Bing:
+
+filetype o ext (Buscaríamos por extensión de archivos)
+contains (Permite buscar enlaces a ficheros con una extensión concreta)
+intitle (este operador al igual que en Google nos buscara en el titulo de la pagina)
+domain (nos buscara toda la información de un dominio en concreto)
+feed (nos buscara en canales rss de las paginas)
+ip:a.b.c.d
+Ejemplos de dorks:
+contains:rdp intitle:”index.of” (nos buscara en el titulo archivos indexados de rdp que son Escritorios remotos)
+domain:uned.es filetype:pdf (nos buscara en el dominio de la uned.es archivos con extensión PDF)
+feed:hacking loc:es (nos buscara canales RSS relacionados con el hacking en dominios de España)
+intitle:index.of.* loc:es (nos buscara en el titulo de la pagina archivos indexados en dominios de España)

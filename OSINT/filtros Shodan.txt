@@ -1,0 +1,10 @@
+Ejemplos de operadores lógicos (Dorks) en el navegador Shodan.
+
+country (filtraríamos por países)
+port (nos filtrara por puertos)
+title (nos buscara por cabeceras)
+os (nos buscara por sistema operativo)r
+geo (busca en las coordenadas indicadas)
+Para usarlo en linea de comandos
+
+https://www.reydes.com/d/?q=Interfaz_en_Linea_de_Comando_de_Shodan

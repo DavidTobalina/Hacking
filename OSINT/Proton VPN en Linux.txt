@@ -1,0 +1,19 @@
+Para usar proton VPN en nuestro Linux debemos
+
+Descargar el paquete.deb(https://protonvpn.com/support/official-linux-vpn-ubuntu/) e instalarlo, esto nos activa el repositorio donde está el software
+apt update
+apt install protonvpn
+Para usarlo
+
+$ protonvpn-cli login <usuario>
+
+nos pedirá la pass y nos informa del éxito del acceso.
+
+Para conectar
+
+$ protonvpn-cli c
+
+Para desconectar
+
+$ protonvpn-cli d
+

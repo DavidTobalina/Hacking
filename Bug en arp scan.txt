@@ -1,0 +1,3 @@
+No en encuentra la ruta a los archivos de la marca de las tarjetas de red, la solución es indicar directamente la ruta.
+
+sudo arp-scan 192.168.0.0/24 --ouifile=/usr/share/arp-scan/ieee-oui.txt --macfile=/etc/arp-scan/mac-vendor.txt

